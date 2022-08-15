@@ -1,0 +1,64 @@
+@import "../../../common/style/template";
+@import "../../../common/style/colors";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 570px;
+  margin: auto;
+  margin-top: 31px;
+}
+
+.submit {
+  cursor: pointer;
+  background-color: $submit-bg-color;
+  border-radius: 4px;
+  height: 64px;
+  width: 100%;
+  border: 0;
+  color: $secondary-color;
+  font-size: 16px;
+  font-weight: 600;
+  @extend %one-line;
+}
+.submit:active {
+  background-color: $submit-bg-color-hover;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  & > * {
+    width: 271px;
+  }
+}
+.flex {
+  display: flex;
+  padding: 0 14px  18px;
+  border: 1px solid $secondary-color;
+  margin-bottom: 30px;
+  &:first-child {
+    margin-top: 15px;
+  }
+}
+.radio{
+  margin-top: 14px;
+}
+.radio_h2 {
+  font-size: 22px;
+}
+.radio_span {
+  font-size: 14px;
+}
+
+.radio_h2,
+.radio_span {
+  margin: 0;
+  color: $secondary-color;
+  font-weight: 400;
+}
+
+.radio_span_container{
+  margin-top: 6px;
+  margin-left: 10px;
+}

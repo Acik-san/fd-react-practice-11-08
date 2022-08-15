@@ -1,0 +1,17 @@
+@import "./colors";
+%flex-space-around {
+  display: flex;
+  justify-content: space-around;
+}
+%one-line {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+%h1 {
+  text-align: center;
+  font-size: 38px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: $secondary-color;
+}

@@ -1,0 +1,6 @@
+@import "../common/style/template";
+
+.h1 {
+  margin-top: 90px;
+  @extend %h1;
+}

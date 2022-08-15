@@ -1,0 +1,22 @@
+@import "../../common/style/template";
+@import "../../common/style/colors";
+
+.header {
+  margin-top: 46px;
+  @extend %flex-space-around;
+}
+
+.btn {
+  width: 4%;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 22px;
+  padding: 14px 15px;
+  border: 1px solid $secondary-color;
+  border-radius: 4px;
+  color: $secondary-color;
+  background-color: $main-color;
+  text-align: center;
+  text-decoration: none;
+  @extend %one-line;
+}
