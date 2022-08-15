@@ -28,13 +28,11 @@ const SignUpForm = (props) => {
                 name="fname"
                 type="text"
                 placeholder="first name"
-                // className={styles.input}
               />
               <Input
                 name="lname"
                 type="text"
                 placeholder="last name"
-                // className={styles.input}
               />
             </div>
             <div className={styles.row}>
@@ -42,14 +40,12 @@ const SignUpForm = (props) => {
                 name="dname"
                 type="text"
                 placeholder="display name"
-                // className={styles.input}
               />
               <Input
                 name="email"
                 type="email"
                 placeholder="email address"
                 id="email"
-                // className={styles.input}
               />
             </div>
             <div className={styles.row}>
@@ -57,13 +53,12 @@ const SignUpForm = (props) => {
                 name="password"
                 type="password"
                 placeholder="password"
-                // className={styles.input}
+           
               />
               <Input
                 name="passwordConfirm"
                 type="password"
                 placeholder="password confirmation"
-                // className={styles.input}
               />
             </div>
             <div>
