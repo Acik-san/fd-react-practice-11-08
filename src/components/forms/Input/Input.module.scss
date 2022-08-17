@@ -13,7 +13,7 @@
   padding: 21px 23px;
   border: 2px solid $secondary-color;
   border-radius: 4px;
-  margin-bottom: 18px;
+  margin-bottom: 38px;
   &::placeholder {
     text-transform: capitalize;
   }
@@ -28,12 +28,12 @@
 .error,
 .radio_error,
 .right_side_error {
-  min-width: 131px;
+  min-width: 48px;
   font-family: Helvetica;
-  font-size: 13px;
+  font-size: 9px;
   font-weight: bold;
   color: #cc0033;
-  line-height: 20px;
+  line-height: 8px;
   background-color: #fce4e4;
   border: 1px solid #fcc2c3;
   border-radius: 7px;
@@ -41,7 +41,8 @@
   -webkit-border-radius: 7px;
   float: left;
   position: absolute;
-  left: -174px;
+  left: -10px;
+  top: -50px;
   padding: 7px 11px 4px;
   margin-left: 10px; /* distance between error tip and element it points to */
   text-align: center;
@@ -56,29 +57,217 @@
   content: "";
   border: 7px solid transparent;
   position: absolute;
-  top: 10px;
+  top: 6px;
 }
-.error:after,
+.error:after {
+  border-top: 7px solid #fce4e4;
+  left: 10px;
+  top: 17px;
+}
+.error:before {
+  border-top: 7px solid #fcc2c3;
+  left: 10px;
+  top: 19px;
+}
 .radio_error:after {
-  border-left: 7px solid #fce4e4;
-  left: 152px;
+  border-top: 7px solid #fce4e4;
+  left: 10px;
+  top: 26px;
 }
-.error:before,
 .radio_error:before {
-  border-left: 7px solid #fcc2c3;
-  left: 154px;
+  border-top: 7px solid #fcc2c3;
+  left: 10px;
+  top: 28px;
 }
+
 .radio_error {
-  left: -190px;
+  left: -25px;
+  top: -39px;
 }
 .right_side_error {
-  left: 270px;
+  left: -10px;
+  bottom: 50px;
 }
 .right_side_error:after {
-  border-right: 7px solid #fce4e4;
-  left: -14px;
+  border-top: 7px solid #fce4e4;
+  left: 10px;
+  top: 17px;
 }
 .right_side_error:before {
-  border-right: 7px solid #fcc2c3;
-  left: -15px;
+  border-top: 7px solid #fcc2c3;
+  left: 10px;
+  top: 19px;
+}
+.login_error {
+  left: -10px;
+  top: -28px;
+}
+
+@media screen and (min-width: 768px) {
+  .label {
+    position: relative;
+  }
+
+  .input {
+    color: $input-text-color;
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 16px;
+    padding: 21px 23px;
+    border: 2px solid $secondary-color;
+    border-radius: 4px;
+    margin-bottom: 18px;
+    &::placeholder {
+      text-transform: capitalize;
+    }
+  }
+  .invalid {
+    border: 2px solid $input-invalid-color;
+  }
+  .display_none {
+    position: absolute;
+    display: none !important;
+  }
+  .error,
+  .radio_error,
+  .right_side_error {
+    min-width: 111px;
+    font-family: Helvetica;
+    font-size: 11px;
+    font-weight: bold;
+    color: #cc0033;
+    line-height: 15px;
+    background-color: #fce4e4;
+    border: 1px solid #fcc2c3;
+    border-radius: 7px;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    float: left;
+    position: absolute;
+    left: -154px;
+    top: 0;
+    padding: 7px 11px 4px;
+    margin-left: 10px; /* distance between error tip and element it points to */
+    text-align: center;
+  }
+
+  .error:after,
+  .error:before,
+  .radio_error:after,
+  .radio_error:before,
+  .right_side_error:after,
+  .right_side_error:before {
+    content: "";
+    border: 7px solid transparent;
+    position: absolute;
+    top: 6px;
+  }
+  .error:after,
+  .radio_error:after {
+    border-left: 7px solid #fce4e4;
+    left: 132px;
+  }
+  .error:before,
+  .radio_error:before {
+    border-left: 7px solid #fcc2c3;
+    left: 134px;
+  }
+  .radio_error {
+    left: -169px;
+    bottom: 25px;
+  }
+  .right_side_error {
+    left: 209px;
+  }
+  .right_side_error:after {
+    border-right: 7px solid #fce4e4;
+    left: -14px;
+  }
+  .right_side_error:before {
+    border-right: 7px solid #fcc2c3;
+    left: -15px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .label {
+    position: relative;
+  }
+
+  .input {
+    color: $input-text-color;
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 16px;
+    padding: 21px 23px;
+    border: 2px solid $secondary-color;
+    border-radius: 4px;
+    margin-bottom: 18px;
+    &::placeholder {
+      text-transform: capitalize;
+    }
+  }
+  .invalid {
+    border: 2px solid $input-invalid-color;
+  }
+  .display_none {
+    position: absolute;
+    display: none !important;
+  }
+  .error,
+  .radio_error,
+  .right_side_error {
+    min-width: 131px;
+    font-family: Helvetica;
+    font-size: 13px;
+    font-weight: bold;
+    color: #cc0033;
+    line-height: 20px;
+    background-color: #fce4e4;
+    border: 1px solid #fcc2c3;
+    border-radius: 7px;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    float: left;
+    position: absolute;
+    left: -174px;
+    padding: 7px 11px 4px;
+    margin-left: 10px; /* distance between error tip and element it points to */
+    text-align: center;
+  }
+
+  .error:after,
+  .error:before,
+  .radio_error:after,
+  .radio_error:before,
+  .right_side_error:after,
+  .right_side_error:before {
+    content: "";
+    border: 7px solid transparent;
+    position: absolute;
+    top: 10px;
+  }
+  .error:after,
+  .radio_error:after {
+    border-left: 7px solid #fce4e4;
+    left: 152px;
+  }
+  .error:before,
+  .radio_error:before {
+    border-left: 7px solid #fcc2c3;
+    left: 154px;
+  }
+  .radio_error {
+    left: -190px;
+  }
+  .right_side_error {
+    left: 270px;
+  }
+  .right_side_error:after {
+    border-right: 7px solid #fce4e4;
+    left: -14px;
+  }
+  .right_side_error:before {
+    border-right: 7px solid #fcc2c3;
+    left: -15px;
+  }
 }

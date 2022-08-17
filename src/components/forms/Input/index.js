@@ -9,7 +9,8 @@ const Input = (props) => {
     name === "passwordConfirm" || restProps.id === "email" || name === "lname"
       ? styles.right_side_error
       : styles.error,
-    restProps.type === "radio" ? styles.radio_error : null
+    restProps.type === "radio" ? styles.radio_error : null,
+    restProps.id === "login_error" ? styles.login_error : null
   );
   return (
     <label className={styles.label}>

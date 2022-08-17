@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 570px;
+  max-width: 300px;
   margin: auto;
 }
 .submit {
@@ -22,4 +22,34 @@
 }
 .submit:active {
   background-color: $submit-bg-color-hover;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 436px;
+    margin: auto;
+  }
+  .submit {
+    cursor: pointer;
+    background-color: $submit-bg-color;
+    border-radius: 4px;
+    height: 64px;
+    width: 100%;
+    border: 0;
+    color: $secondary-color;
+    font-size: 16px;
+    font-weight: 600;
+    @extend %one-line;
+  }
+  .submit:active {
+    background-color: $submit-bg-color-hover;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 570px;
+  }
 }

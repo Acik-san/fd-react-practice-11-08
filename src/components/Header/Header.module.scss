@@ -7,7 +7,7 @@
 }
 
 .btn {
-  width: 4%;
+  max-width: 20%;
   font-size: 22px;
   font-weight: 700;
   line-height: 22px;
@@ -19,4 +19,14 @@
   text-align: center;
   text-decoration: none;
   @extend %one-line;
+}
+@media screen and (min-width: 768px) {
+  .btn {
+    max-width: 8%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .btn {
+    max-width: 6%;
+  }
 }

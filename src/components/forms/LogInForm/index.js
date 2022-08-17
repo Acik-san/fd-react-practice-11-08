@@ -17,8 +17,18 @@ const LogInForm = (props) => {
       {(formikProps) => {
         return (
           <Form className={styles.container}>
-            <Input name="email" type="text" placeholder="Email adress" />
-            <Input name="password" type="password" placeholder="Password" />
+            <Input
+              name="email"
+              type="text"
+              id="login_error"
+              placeholder="Email adress"
+            />
+            <Input
+              name="password"
+              type="password"
+              id="login_error"
+              placeholder="Password"
+            />
             <input type="submit" value="LOGIN" className={styles.submit} />
           </Form>
         );
